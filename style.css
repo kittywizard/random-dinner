@@ -2,4 +2,35 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#btn {
+    border: unset;
+    background-color: rgb(121, 113, 113);
+    color: #fff;
+    padding: 0.7em;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* typography */
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1em;
+    color:rgb(121, 113, 113);
 }
