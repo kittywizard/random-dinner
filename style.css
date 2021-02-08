@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-#btn {
+.btn {
     border: unset;
     background-color: rgb(121, 113, 113);
     color: #fff;
@@ -21,6 +21,12 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.responsive {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
 }
 
 /* typography */
