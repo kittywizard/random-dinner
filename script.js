@@ -3,7 +3,6 @@ const pizzaBtn = document.getElementById('pizza-btn');
 const burgerBtn = document.getElementById('burger-btn');
 const biryaniBtn = document.getElementById('biryani-btn');
 
-
 const form = document.getElementById('generate');
 const imageDiv = document.querySelector(".image");
 let image = document.createElement('img');
@@ -22,10 +21,25 @@ async function fetchCall(param) {
 fetchCall('images/pizza');
 
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+//event listener hell.
+    //is there a way to have the form be able to pick out the specific button in one call? 
 
-    //need to grab which button was clicked
-    console.log(form)
-    //fetchCall();
+pizzaBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    fetchCall('images/pizza');
+});
+
+burgerBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    fetchCall('images/burger');
+});
+
+biryaniBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    fetchCall('images/biryani');
+});
+
+randomBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    fetchCall('');
 });
