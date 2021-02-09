@@ -10,6 +10,9 @@ body {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0.75em;
 }
 
 .image {
@@ -19,7 +22,7 @@ body {
 form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .btn {
@@ -40,8 +43,8 @@ form {
 }
 
 .responsive {
-    width: 50%;
-    height:50%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     border-radius: 15px;
 }
@@ -63,3 +66,12 @@ p {
 /* One for the image display 
 
 One for the buttons */
+
+@media (min-width: 675px) {
+    .responsive {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+}
